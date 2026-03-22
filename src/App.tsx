@@ -1,5 +1,17 @@
+import { DatabaseConnectionDemo } from "./patterns/creational/singleton"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { Layout } from "./components/Layout"
+
 function App() {
-  return <div>Design Patterns</div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route path="/singleton" element={<DatabaseConnectionDemo />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App
