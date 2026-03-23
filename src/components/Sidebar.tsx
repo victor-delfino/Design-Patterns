@@ -5,7 +5,7 @@ const navigation = [
         group: 'Creational',
         items: [
             {label: 'Singleton', path: '/singleton'},
-            {label: 'Factory Method', path: '/factory-method'},
+            {label: 'Factory Method', path: '/factory'},
             {label: 'Builder', path: '/builder'},
         ]
     },

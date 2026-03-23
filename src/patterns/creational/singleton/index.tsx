@@ -68,7 +68,7 @@ export function DatabaseConnectionDemo() {
 
   return (
     <div className="bg-zinc-900 p-8 min-h-screen mx-auto flex flex-col"> {/* ← faltou */}
-      <h1 className="text-2xl font-bold mb-8 text-emerald-400">Singleton — DatabaseConnection</h1>
+      <h1 className="text-2xl font-bold mb-8 text-emerald-400">Singleton</h1>
       <div className="grid grid-cols-2 gap-6"> {/* ← e o grid */}
         <Session label="Sessão A" isConnected={isConnected} setIsConnected={setIsConnected} />
         <Session label="Sessão B" isConnected={isConnected} setIsConnected={setIsConnected} />
