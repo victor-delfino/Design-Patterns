@@ -36,7 +36,12 @@ const navigation = [
     }
 ]
 
-export function Sidebar() {
+interface SidebarProps {
+  onFechar: () => void;
+}
+
+
+export function Sidebar({ onFechar }: SidebarProps) {
   return (
     <aside className="w-64 bg-zinc-800 p-6 border-r border-zinc-700 rounded-xl min-h-screen">
       {navigation.map(group => (
@@ -47,7 +52,7 @@ export function Sidebar() {
           <ul>
             {group.items.map(item => (
               <li className="mb-1" key={item.path}>
-                <NavLink
+                <NavLink onClick={onFechar}
                   className={({ isActive }) =>
                     `block px-3 py-2 rounded-lg text-sm transition-colors ${
                       isActive
