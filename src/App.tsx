@@ -6,6 +6,7 @@ import { QueryBuilderDemo } from "./patterns/creational/builder"
 import {  PaymentAdapterDemo } from "./patterns/structural/adapter"
 import { HttpDecoratorDemo } from "./patterns/structural/decorator"
 import { OrderFacadeDemo } from "./patterns/structural/facade"
+import { StockMarketDemo } from "./patterns/behavioral/observer"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/adapter" element={<PaymentAdapterDemo />} />
           <Route path="/decorator" element={<HttpDecoratorDemo />} />
           <Route path="/facade" element={<OrderFacadeDemo />} />
+          <Route path="/observer" element={<StockMarketDemo />} />
         </Route>
       </Routes>
     </BrowserRouter>
