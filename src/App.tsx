@@ -5,6 +5,7 @@ import { VehicleFactoryDemo } from "./patterns/creational/factory"
 import { QueryBuilderDemo } from "./patterns/creational/builder"
 import {  PaymentAdapterDemo } from "./patterns/structural/adapter"
 import { HttpDecoratorDemo } from "./patterns/structural/decorator"
+import { OrderFacadeDemo } from "./patterns/structural/facade"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/builder" element={<QueryBuilderDemo />} />
           <Route path="/adapter" element={<PaymentAdapterDemo />} />
           <Route path="/decorator" element={<HttpDecoratorDemo />} />
+          <Route path="/facade" element={<OrderFacadeDemo />} />
         </Route>
       </Routes>
     </BrowserRouter>
