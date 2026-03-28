@@ -1,4 +1,4 @@
-interface PaymentAdapter {
+export interface PaymentAdapter {
     charge(amount: number, currency: string): Promise<string>
 }
 
