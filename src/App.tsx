@@ -9,6 +9,7 @@ import { OrderFacadeDemo } from "./patterns/structural/facade"
 import { StockMarketDemo } from "./patterns/behavioral/observer"
 import { ShippingStrategyDemo } from "./patterns/behavioral/strategy"
 import { TextEditorDemo } from "./patterns/behavioral/command"
+import { WithAuthDemo } from "./patterns/react-specific/hoc"
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="/observer" element={<StockMarketDemo />} />
           <Route path="/strategy" element={<ShippingStrategyDemo />} />
           <Route path="/command" element={<TextEditorDemo />} />
+          <Route path="/hoc" element={<WithAuthDemo />} />
         </Route>
       </Routes>
     </BrowserRouter>
